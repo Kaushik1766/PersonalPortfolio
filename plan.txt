@@ -1,0 +1,2 @@
+hero - bento
+skills - https://ui.aceternity.com/components/canvas-reveal-effect
