@@ -3,12 +3,15 @@ import React, { useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import { useSelector } from 'react-redux'
 import { useAppDispatch, useAppSelector } from '@/Redux/hooks'
+import About from '@/components/About'
 
 function page() {
   const tab = useAppSelector((state) => state.tabs.currentTab)
   return (
     <>
-      <div className='w-full'>{tab}</div>
+      {
+        tab == 0 && <About />
+      }
     </>
   )
 }
