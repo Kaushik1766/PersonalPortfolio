@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 import { useAppDispatch, useAppSelector } from '@/Redux/hooks'
 import About from '@/components/About'
 
-function page() {
+function Page() {
   const tab = useAppSelector((state) => state.tabs.currentTab)
   return (
     <>
@@ -16,4 +16,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

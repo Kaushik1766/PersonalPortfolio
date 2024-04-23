@@ -50,7 +50,7 @@ function About() {
               <div className='grid grid-cols-1 lg:grid-cols-2 gap-y-4 w-full'>
                 {
                   myInfo.map((item, idx) => {
-                    return <div className='flex gap-3 items-center'>
+                    return <div className='flex gap-3 items-center' key={idx}>
                       <div className='text-2xl'>
                         {item.icon}
                       </div>

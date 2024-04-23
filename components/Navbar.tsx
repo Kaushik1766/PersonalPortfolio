@@ -17,7 +17,7 @@ const tabs = [
     'Contact'
 ]
 
-function navbar() {
+function Navbar() {
 
     const dispatch = useAppDispatch()
     const tab = useAppSelector((state: any) => state.tabs.currentTab)
@@ -115,4 +115,4 @@ function navbar() {
     )
 }
 
-export default navbar
+export default Navbar

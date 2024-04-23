@@ -1,6 +1,6 @@
 import React from 'react'
 
-function page() {
+function Page() {
     return (
         <>
             <div className="drawer lg:drawer-open">
@@ -26,4 +26,4 @@ function page() {
     )
 }
 
-export default page
+export default Page
