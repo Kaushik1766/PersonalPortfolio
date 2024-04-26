@@ -17,6 +17,21 @@ const tabs = [
     'Contact'
 ]
 
+
+const links = [
+    {
+        link: 'https://github.com/Kaushik1766',
+        icon: <FaGithub></FaGithub>
+    },
+    {
+        link: 'https://www.linkedin.com/in/kaushiksaha176/',
+        icon: <FaLinkedin></FaLinkedin>
+    },
+    {
+        link: 'https://www.instagram.com/kaushiksaha176/',
+        icon: <FaInstagram></FaInstagram>
+    },
+]
 function Navbar() {
 
     const dispatch = useAppDispatch()
@@ -45,15 +60,13 @@ function Navbar() {
                 </div>
                 {/* footer */}
                 <div className='w-full p-4 flex text-2xl justify-evenly items-center'>
-                    <Link href={'#'}>
-                        <FaGithub />
-                    </Link>
-                    <Link href={'#'}>
-                        <FaLinkedin />
-                    </Link>
-                    <Link href={'#'}>
-                        <FaInstagram />
-                    </Link>
+                    {
+                        links.map((item, idx) => {
+                            return <Link href={item.link} target='_blank' key={idx}>
+                                {item.icon}
+                            </Link>
+                        })
+                    }
 
                 </div>
                 <label className="swap swap-rotate">

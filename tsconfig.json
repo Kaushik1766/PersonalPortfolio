@@ -33,7 +33,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/ReduxProvider.jsx",
-    "app/page.jsx"
+    "app/page.jsx",
+    "components/Education.jsx"
   ],
   "exclude": [
     "node_modules"
