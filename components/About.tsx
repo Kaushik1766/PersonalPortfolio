@@ -36,7 +36,7 @@ function About() {
     <div className=''>
 
       {/* window with hero */}
-      <div className="mockup-window border bg-base-300 w-11/12 mx-auto my-20 shadow-2xl">
+      <div className="mockup-window border bg-base-300 w-11/12 mx-auto my-10 lg:my-20 shadow-2xl">
         <div className='p-3 bg-base-100'>
           {/* card */}
           <div className='flex flex-col lg:flex-row rounded-xl overflow-hidden w-full gap-4'>
