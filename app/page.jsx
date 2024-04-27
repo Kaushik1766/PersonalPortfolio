@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 import { useAppDispatch, useAppSelector } from '@/Redux/hooks'
 import About from '@/components/About'
 import Resume from '@/components/Resume'
+import SkillsPage from '@/components/SkillsPage'
 
 
 const pages = [
@@ -13,7 +14,13 @@ const pages = [
   },
   {
     component: <Resume />
-  }
+  },
+  {
+    component: <div>fase</div>
+  },
+  {
+    component: <SkillsPage />
+  },
 ]
 
 function Page() {

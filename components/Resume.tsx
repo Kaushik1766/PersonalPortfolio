@@ -1,7 +1,6 @@
 import React from 'react'
 import Education from './Education'
 import Work from './Work'
-import Skills from './Skills'
 
 function Resume() {
     return (
@@ -12,7 +11,6 @@ function Resume() {
                 <div className='w-full flex justify-end pt-2 mb-8'>
                     <p>1+ year of experience</p>
                 </div>
-                <Skills />
                 <Education />
                 <Work />
             </div>

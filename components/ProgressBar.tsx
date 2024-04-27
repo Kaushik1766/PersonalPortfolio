@@ -21,7 +21,7 @@ function ProgressBar({ level }: { level: number }) {
     }, []);
     return (
         <>
-            <progress className="progress w-1/2 duration-500" value={progress} max="100"></progress>
+            <progress className="progress w-full md:w-full lg:w-1/2 duration-500" value={progress} max="100"></progress>
         </>
     )
 }
