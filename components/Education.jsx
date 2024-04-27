@@ -23,7 +23,7 @@ function Education() {
                     <div className="timeline-start timeline-box md:text-end mb-10 p-5 shadow-xl">
                         <time className="font-mono italic">2019-2020</time>
                         <div className="text-lg font-black">St. Paul&apos;s College</div>
-                        I completed my matriculation at St. Paul's College in Lucknow, studying under the ICSE Board from 2019 to 2020. During this time, I gained a solid academic foundation, honed my skills, and built strong relationships with my classmates and teachers. My experience at St. Paul's College was both enriching and transformative, setting the stage for my future growth and success.
+                        I completed my matriculation at St. Paul&apos;s College in Lucknow, studying under the ICSE Board from 2019 to 2020. During this time, I gained a solid academic foundation, honed my skills, and built strong relationships with my classmates and teachers. My experience at St. Paul&apos;s College was both enriching and transformative, setting the stage for my future growth and success.
 
                     </div>
                     <hr className='!border-4 border-base-content' />
@@ -36,7 +36,7 @@ function Education() {
                     <div className="timeline-end mb-10 timeline-box p-5 shadow-xl">
                         <time className="font-mono italic">2020-2022</time>
                         <div className="text-lg font-black">Mary Gardiners Convent School</div>
-                        I completed my intermediate education at Mary Gardiners Convent School in Lucknow, studying under the CBSE Board from 2020 to 2022. During this period, I gained a deeper understanding of advanced subjects and developed important skills. The school's supportive environment and comprehensive curriculum played a key role in my academic and personal growth, laying a strong foundation for my future goals.
+                        I completed my intermediate education at Mary Gardiners Convent School in Lucknow, studying under the CBSE Board from 2020 to 2022. During this period, I gained a deeper understanding of advanced subjects and developed important skills. The school&apos;s supportive environment and comprehensive curriculum played a key role in my academic and personal growth, laying a strong foundation for my future goals.
                     </div>
                     <hr className='!border-4 border-base-content' />
                 </li>
@@ -48,7 +48,7 @@ function Education() {
                     <div className="timeline-start md:text-end mb-10 timeline-box p-5 shadow-xl">
                         <time className="font-mono italic">2022-Present</time>
                         <div className="text-lg font-black">Chandigarh University</div>
-                        I'm currently studying for my Bachelor's in Computer Science and Engineering at Chandigarh University in Punjab. The program covers a broad range of topics, from coding and algorithms to AI and machine learning. Chandigarh University offers a dynamic environment with modern facilities and experienced faculty. As I progress through my studies, I'm gaining the skills and expertise needed to succeed in the tech industry, and I'm eager to explore the opportunities ahead.
+                        I&apos;m currently studying for my Bachelor&apos;s in Computer Science and Engineering at Chandigarh University in Punjab. The program covers a broad range of topics, from coding and algorithms to AI and machine learning. Chandigarh University offers a dynamic environment with modern facilities and experienced faculty. As I progress through my studies, I&apos;m gaining the skills and expertise needed to succeed in the tech industry, and I&apos;m eager to explore the opportunities ahead.
                     </div>
                 </li>
             </ul>

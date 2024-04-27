@@ -8,8 +8,12 @@ import Resume from '@/components/Resume'
 
 
 const pages = [
-  <About />,
-  <Resume />
+  {
+    component: <About />,
+  },
+  {
+    component: <Resume />
+  }
 ]
 
 function Page() {
@@ -20,9 +24,10 @@ function Page() {
         pages.map((item, idx) => {
           if (tab == idx) {
             return <div key={idx}>
-              {item}
+              {item.component}
             </div>
           }
+
         })
       }
     </>
