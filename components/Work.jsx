@@ -20,7 +20,7 @@ function Work() {
             {/* experience */}
             <div className='w-full border rounded-xl shadow-xl p-5 flex flex-col gap-2 bg-base-100' >
                 <h2 className='text-2xl font-bold'>Web Developer Intern</h2>
-                <p>Uniford Foudnation</p>
+                <p>Uniford Foundation</p>
                 <div className='flex gap-10'>
                     <p>February, 2024 - Present</p>
                     <div className='flex items-center gap-1'>
