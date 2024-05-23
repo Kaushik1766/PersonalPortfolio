@@ -19,11 +19,11 @@ const myInfo = [
     icon: <MdEmail />,
     content: 'kaushiksaha004@gmail.com'
   },
-  {
-    category: 'Phone',
-    icon: <FaPhoneSquareAlt />,
-    content: '9696068369'
-  },
+  // {
+  //   category: 'Phone',
+  //   icon: <FaPhoneSquareAlt />,
+  //   content: ''
+  // },
   {
     category: 'Website',
     icon: <BsGlobe2 />,
