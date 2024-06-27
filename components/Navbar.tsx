@@ -2,6 +2,7 @@
 import { setTab } from '@/Redux/features/tabs'
 import { useAppDispatch, useAppSelector } from '@/Redux/hooks'
 import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -10,11 +11,26 @@ import { FaInstagram } from "react-icons/fa";
 
 
 const tabs = [
-    'About',
-    'Resume',
-    'Projects',
-    'Skills',
-    'Contact'
+    {
+        name: 'About',
+        link: '/'
+    },
+    {
+        name: 'Resume',
+        link: '/Resume'
+    },
+    {
+        name: 'Projects',
+        link: '/Projects'
+    },
+    {
+        name: 'Skills',
+        link: '/Skills'
+    },
+    {
+        name: 'Contact',
+        link: '/Contact'
+    },
 ]
 
 
@@ -36,8 +52,11 @@ function Navbar() {
 
     const dispatch = useAppDispatch()
     const tab = useAppSelector((state: any) => state.tabs.currentTab)
+    const router = useRouter()
+    const pathname = usePathname()
     return (
         <>
+            {/* for desktop */}
             <div className='hidden bg-base-300 w-full h-full lg:flex flex-col p-4 py-10 justify-between rounded-r-2xl'>
                 {/* name */}
                 <h1 className='text-center text-3xl font-bold mx-12'>Kaushik</h1>
@@ -50,10 +69,11 @@ function Navbar() {
                 <div className='flex flex-col gap-3'>
                     {
                         tabs.map((item, idx) => (
-                            <div className={`btn  ${tab == idx ? 'btn-active btn-neutral' : 'btn-outline'}`} onClick={() => {
-                                dispatch(setTab(idx))
+                            <div className={`btn  ${pathname == item.link ? 'btn-active btn-neutral' : 'btn-outline'}`} onClick={() => {
+                                // dispatch(setTab(idx))
+                                router.push(item.link)
                             }} key={idx}>
-                                {item}
+                                {item.name}
                             </div>
                         ))
                     }
@@ -69,6 +89,7 @@ function Navbar() {
                     }
 
                 </div>
+                {/* dark toggle */}
                 <label className="swap swap-rotate">
 
                     {/* this hidden checkbox controls the state */}
@@ -82,6 +103,7 @@ function Navbar() {
 
                 </label>
             </div>
+            {/* for phone */}
             <div className='flex h-full lg:hidden flex-col p-4 py-10 justify-between bg-base-100'>
                 {/* name */}
                 <h1 className='text-center text-3xl font-bold mx-12 md:mx-28'>Kaushik</h1>
@@ -90,10 +112,11 @@ function Navbar() {
                 <div className='flex flex-col gap-3'>
                     {
                         tabs.map((item, idx) => (
-                            <div className={`btn  ${tab == idx ? 'btn-active btn-neutral' : 'btn-outline'}`} onClick={() => {
-                                dispatch(setTab(idx))
+                            <div className={`btn  ${pathname == item.link ? 'btn-active btn-neutral' : 'btn-outline'}`} onClick={() => {
+                                // dispatch(setTab(idx))
+                                router.push(item.link)
                             }} key={idx}>
-                                {item}
+                                {item.name}
                             </div>
                         ))
                     }

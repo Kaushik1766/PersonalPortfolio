@@ -1,5 +1,5 @@
 import React from 'react'
-import ProgressBar from './ProgressBar'
+import ProgressBar from '../../components/ProgressBar'
 import { FaJava, FaNodeJs, FaReact } from 'react-icons/fa'
 import { SiBootstrap, SiCplusplus, SiCss3, SiExpress, SiFirebase, SiGit, SiHtml5, SiNextdotjs, SiPostgresql, SiPython, SiRedux, SiTailwindcss, SiVite } from 'react-icons/si'
 import { TbBrandReactNative } from 'react-icons/tb'
