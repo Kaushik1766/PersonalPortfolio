@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ReduxProvider from "./ReduxProvider";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,19 +19,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const audioRef = useRef<HTMLAudioElement | null>(null)
-  const handlePlay = () => {
+  // const audioRef = useRef<HTMLAudioElement | null>(null)
+  // const handlePlay = () => {
 
-    if (audioRef.current) {
-      audioRef.current.play();
-    }
-  };
+  //   if (audioRef.current) {
+  //     audioRef.current.play();
+  //   }
+  // };
+  useEffect(() => {
+    const cb = () => {
+      const audio = document.createElement('audio');
+      audio.src = '/click.mp3';
+      audio.volume = 0.3
+      console.log('hi');
+      audio.play();
+    };
+
+    document.addEventListener('click', cb);
+    return () => document.removeEventListener('click', cb);
+  }, []);
   return (
     <html lang="en" data-theme='dracula'>
       <ReduxProvider>
-        <body className={inter.className + ''} onClick={handlePlay}>
+        <body className={inter.className + ''}>
           {/* click audio */}
-          <audio ref={audioRef} src="/click.mp3"></audio>
+          {/* <audio ref={audioRef} src="/click.mp3"></audio> */}
           <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
 
